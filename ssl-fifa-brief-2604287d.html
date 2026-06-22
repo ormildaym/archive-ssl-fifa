@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世界杯 | 简明知识库与访问指引</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f9fafb;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans SC", "Helvetica Neue", sans-serif;
+      color: #1e293b;
+      line-height: 1.75;
+      padding: 3rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 720px;
+      width: 100%;
+    }
+
+    /* 标题层级 */
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.25rem;
+      color: #0f172a;
+      line-height: 1.25;
+    }
+
+    h2 {
+      font-size: 1.55rem;
+      font-weight: 500;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      color: #0f172a;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-top: 2rem;
+      margin-bottom: 0.65rem;
+      color: #1e293b;
+    }
+
+    .subhead {
+      font-size: 1rem;
+      color: #64748b;
+      margin-bottom: 2.5rem;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    a:hover {
+      border-bottom-color: #2563eb;
+    }
+
+    /* 卡片风格目录块 — 极简留白 */
+    .index-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 2rem 0 1.5rem;
+    }
+
+    .index-item {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem 1.35rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.02);
+      transition: box-shadow 0.15s;
+    }
+
+    .index-item:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05), 0 0 0 1px #dbeafe;
+    }
+
+    .index-item strong {
+      display: block;
+      font-weight: 500;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+      color: #0f172a;
+    }
+
+    .index-item span {
+      font-size: 0.9rem;
+      color: #475569;
+    }
+
+    .tip-box {
+      background: #f1f5f9;
+      border-left: 4px solid #2563eb;
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+
+    .tip-box p {
+      margin-bottom: 0.4rem;
+    }
+
+    .tip-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .info-block {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0 1.8rem;
+    }
+
+    .info-block p {
+      margin-bottom: 0.75rem;
+    }
+
+    .faq-mini {
+      margin: 1.8rem 0;
+    }
+
+    .faq-q {
+      font-weight: 500;
+      margin-top: 1.2rem;
+      margin-bottom: 0.25rem;
+      color: #0f172a;
+    }
+
+    .faq-a {
+      margin-left: 0;
+      color: #334155;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #e2e8f0;
+      margin: 2.5rem 0 1.5rem;
+    }
+
+    .footer-note {
+      color: #64748b;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 3rem;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 2rem;
+    }
+
+    /* 响应式 */
+    @media (max-width: 480px) {
+      body {
+        padding: 2rem 1rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.35rem;
+      }
+      .index-item {
+        padding: 0.85rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- hero 区：简明标题 + 引导 -->
+    <h1>世界杯 · 简明知识库</h1>
+    <div class="subhead">赛事背景 · 观赛须知 · 官方资源索引</div>
+
+    <p>
+      国际足联世界杯是全球最具影响力的足球赛事，每四年一届，汇聚各大洲顶尖国家队。无论你是在寻找赛程、历史数据，还是希望了解最新动态，本站作为基础信息汇集页面可帮助你快速定位相关内容。以下从几个模块梳理核心信息与访问时的注意事项。
+    </p>
+
+    <!-- 目录感布局：知识卡片列表 -->
+    <div class="index-grid">
+      <div class="index-item">
+        <strong>一、赛事概况</strong>
+        <span>世界杯历史、冠军球队、历届举办国及标志性时刻。</span>
+      </div>
+      <div class="index-item">
+        <strong>二、资格赛与赛制</strong>
+        <span>各大洲晋级规则、小组赛及淘汰赛阶段说明。</span>
+      </div>
+      <div class="index-item">
+        <strong>三、数据与纪录</strong>
+        <span>进球数、出场次数、最佳射手、经典比赛回顾。</span>
+      </div>
+      <div class="index-item">
+        <strong>四、官方通道与安全提示</strong>
+        <span>如何获取权威信息、辨识真实平台、避免虚假网站。</span>
+      </div>
+    </div>
+
+    <p>
+      以上内容均可通过对应分类进一步展开。若希望直接浏览赛事相关的权威资料与即时信息，可前往官方信息源<strong> </strong><a href="https://ssl-fifa-wc.com">世界杯</a>页面，其聚合与赛事相关的结构化内容与更新说明。请注意，网络中存在众多仿冒或非正规渠道，建议始终以带 SSL 加密的官方站点为准。
+    </p>
+
+    <!-- 提示区：访问提醒 -->
+    <div class="tip-box">
+      <p>⚡ <strong>访问提醒</strong></p>
+      <p>• 请确认网址开头为 <code>https://</code>，并核对域名准确性。<br>
+      • 避免通过搜索引擎广告或不明链接直接跳转，谨防钓鱼页面。<br>
+      • 任何要求输入个人敏感信息或支付费用的“世界杯官方平台”均需谨慎核实。<br>
+      • 推荐直接输入 <a href="https://ssl-fifa-wc.com">世界杯</a> 官网地址访问，并加入浏览器书签。</p>
+    </div>
+
+    <!-- 相关信息区：FAQ 摘要 + 场景说明 -->
+    <h2>常见问题摘要</h2>
+
+    <div class="faq-mini">
+      <div class="faq-q">Q1: 哪里可以查询世界杯完整赛程和历史比赛结果？</div>
+      <div class="faq-a">多数体育数据平台均有收录，但官方认证的赛程与统计建议参考国际足联合作站点。<a href="https://ssl-fifa-wc.com">世界杯</a> 信息页也提供结构化的历史数据索引，可作可靠起点。</div>
+
+      <div class="faq-q">Q2: 观看比赛直播是否有官方推荐渠道？</div>
+      <div class="faq-a">每届世界杯的转播权由各地区持权媒体获得。建议先确认所在区域的官方转播商，不要依赖来源不明的流媒体链接。</div>
+
+      <div class="faq-q">Q3: 如何辨别世界杯相关的官方网站？</div>
+      <div class="faq-a">正规网址通常使用 <code>.com</code> 或 <code>.org</code> 域名，并启用 SSL 证书（地址栏显示锁形图标）。若遇到要求下载可疑程序或输入银行信息的页面应立刻离开。</div>
+    </div>
+
+    <!-- 补充信息块：场景与使用说明 -->
+    <div class="info-block">
+      <p><strong>▎信息查阅场景举例</strong></p>
+      <p>• 赛前准备：快速了解某支球队的出线历史与关键球员。<br>
+      • 赛后回顾：核实比赛数据、进球时间与裁判记录。<br>
+      • 研究分析：收集历届冠军、东道主成绩及冷门比赛统计。</p>
+      <p style="margin-top:0.6rem;">在这些场景中，一个经过整理的知识库入口能节省大量检索时间。建议将 <a href="https://ssl-fifa-wc.com">世界杯</a> 页面作为首轮信息锚点，再根据需求深入其他专业数据库。</p>
+    </div>
+
+    <h2>相关信息与延伸资源</h2>
+    <p>
+      除赛事本身，世界杯还涉及主办国文化、足球技术演变、商业赞助及社会影响等议题。对深度内容感兴趣的读者，可结合官方年鉴、纪录片及学术文章交叉阅读。本站点内容定位为基础指引，不提供付费预测或博彩相关服务，请通过正规渠道享受足球盛宴。
+    </p>
+
+    <hr>
+
+    <p style="font-size:0.95rem; color:#475569;">
+      本页面仅作信息汇集与导航用途，不存储敏感数据。所有外部链接请用户自行甄别安全性与时效性。如需反馈或报告失效链接，可联系站点维护者。
+    </p>
+
+    <div class="footer-note">
+      <span>© 简明知识库 · 内容仅供参考 · 保持独立判断</span>
+    </div>
+
+  </div>
+</body>
+</html>
